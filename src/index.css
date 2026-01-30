@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Chai Culture — Premium Royal Chai Design System */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Exact Specifications */
+    --gold: 43 59% 54%;
+    --gold-light: 43 65% 68%;
+    --gold-dark: 43 55% 42%;
+    --gold-muted: 43 40% 75%;
+    --deep-brown: 20 52% 12%;
+    --deep-brown-light: 20 40% 25%;
+    --cream: 38 50% 94%;
+    --cream-dark: 38 35% 88%;
+    --ivory: 42 60% 97%;
+    --warm-white: 40 100% 99%;
+    
+    /* Semantic Colors */
+    --background: 42 60% 97%;
+    --foreground: 20 52% 12%;
+
+    --card: 38 50% 94%;
+    --card-foreground: 20 52% 12%;
+
+    --popover: 42 60% 97%;
+    --popover-foreground: 20 52% 12%;
+
+    --primary: 43 59% 54%;
+    --primary-foreground: 20 52% 12%;
+
+    --secondary: 38 50% 94%;
+    --secondary-foreground: 20 52% 12%;
+
+    --muted: 38 35% 88%;
+    --muted-foreground: 20 30% 40%;
+
+    --accent: 43 65% 68%;
+    --accent-foreground: 20 52% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 43 35% 82%;
+    --input: 43 35% 82%;
+    --ring: 43 59% 54%;
+
+    --radius: 1rem;
+
+    /* Custom Properties */
+    --shadow-soft: 0 4px 24px -4px hsl(20 52% 12% / 0.06);
+    --shadow-card: 0 8px 40px -8px hsl(20 52% 12% / 0.1);
+    --shadow-hover: 0 16px 48px -8px hsl(20 52% 12% / 0.15);
+    --shadow-gold: 0 8px 32px -8px hsl(43 59% 54% / 0.25);
+    --gradient-gold: linear-gradient(135deg, hsl(43 59% 54%), hsl(43 65% 68%));
+    --gradient-gold-subtle: linear-gradient(135deg, hsl(43 59% 54% / 0.1), hsl(43 65% 68% / 0.05));
+    --gradient-cream: linear-gradient(180deg, hsl(42 60% 97%), hsl(38 50% 94%));
+    --gradient-hero: linear-gradient(180deg, hsl(42 60% 97%) 0%, hsl(38 50% 94%) 50%, hsl(43 59% 54% / 0.05) 100%);
+    
+    --sidebar-background: 38 50% 94%;
+    --sidebar-foreground: 20 52% 12%;
+    --sidebar-primary: 43 59% 54%;
+    --sidebar-primary-foreground: 20 52% 12%;
+    --sidebar-accent: 43 65% 68%;
+    --sidebar-accent-foreground: 20 52% 12%;
+    --sidebar-border: 43 35% 82%;
+    --sidebar-ring: 43 59% 54%;
+  }
+
+  .dark {
+    --background: 20 52% 8%;
+    --foreground: 42 60% 97%;
+
+    --card: 20 40% 12%;
+    --card-foreground: 42 60% 97%;
+
+    --popover: 20 52% 8%;
+    --popover-foreground: 42 60% 97%;
+
+    --primary: 43 59% 54%;
+    --primary-foreground: 20 52% 12%;
+
+    --secondary: 20 40% 16%;
+    --secondary-foreground: 42 60% 97%;
+
+    --muted: 20 30% 20%;
+    --muted-foreground: 38 30% 65%;
+
+    --accent: 43 50% 45%;
+    --accent-foreground: 42 60% 97%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 30% 20%;
+    --input: 20 30% 20%;
+    --ring: 43 59% 54%;
+    
+    --sidebar-background: 20 40% 12%;
+    --sidebar-foreground: 42 60% 97%;
+    --sidebar-primary: 43 59% 54%;
+    --sidebar-primary-foreground: 20 52% 12%;
+    --sidebar-accent: 20 30% 20%;
+    --sidebar-accent-foreground: 42 60% 97%;
+    --sidebar-border: 20 30% 20%;
+    --sidebar-ring: 43 59% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+@layer components {
+  /* Heritage Pattern */
+  .heritage-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8A44D' stroke-width='0.5' stroke-opacity='0.06'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3Cpath d='M40 10 L40 70 M10 40 L70 40'/%3E%3Cpath d='M40 10 C55 25 55 55 40 70 C25 55 25 25 40 10'/%3E%3Cpath d='M10 40 C25 55 55 55 70 40 C55 25 25 25 10 40'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .mandala-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8A44D' stroke-width='0.4' stroke-opacity='0.08'%3E%3Ccircle cx='60' cy='60' r='50'/%3E%3Ccircle cx='60' cy='60' r='40'/%3E%3Ccircle cx='60' cy='60' r='30'/%3E%3Ccircle cx='60' cy='60' r='20'/%3E%3Ccircle cx='60' cy='60' r='10'/%3E%3Cpath d='M60 10 L60 110 M10 60 L110 60 M25 25 L95 95 M95 25 L25 95'/%3E%3Cellipse cx='60' cy='60' rx='45' ry='25' transform='rotate(0 60 60)'/%3E%3Cellipse cx='60' cy='60' rx='45' ry='25' transform='rotate(60 60 60)'/%3E%3Cellipse cx='60' cy='60' rx='45' ry='25' transform='rotate(120 60 60)'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Premium Buttons */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-8 py-3.5 rounded-2xl font-medium 
+           transition-all duration-300 hover:shadow-[var(--shadow-gold)] hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-primary/50 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-primary text-primary px-8 py-3.5 rounded-2xl font-medium 
+           transition-all duration-300 hover:bg-primary hover:text-primary-foreground
+           focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  .btn-ghost {
+    @apply text-foreground px-6 py-3 rounded-xl font-medium 
+           transition-all duration-300 hover:bg-primary/10 hover:text-primary
+           focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  /* Cards */
+  .card-premium {
+    @apply bg-card rounded-3xl shadow-[var(--shadow-card)] border border-border/50
+           transition-all duration-500 hover:shadow-[var(--shadow-hover)] hover:-translate-y-1;
+  }
+
+  .card-glass {
+    @apply bg-background/80 backdrop-blur-md rounded-3xl shadow-[var(--shadow-card)] border border-primary/20;
+  }
+
+  /* Gold Accents */
+  .gold-border {
+    @apply border-2 border-primary/30;
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 40px -10px hsl(43 59% 54% / 0.3);
+  }
+
+  /* Link Styles */
+  .link-gold {
+    @apply text-foreground transition-all duration-300 hover:text-primary relative;
+  }
+
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 
+           after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  /* Input Styles */
+  .input-premium {
+    @apply w-full px-5 py-4 rounded-2xl bg-background border-2 border-border 
+           focus:border-primary focus:ring-0 focus:outline-none
+           transition-all duration-300 text-foreground placeholder:text-muted-foreground;
+  }
+
+  /* Badge Styles */
+  .badge-royal {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium 
+           bg-primary/10 text-primary border border-primary/20;
+  }
+
+  .badge-gold {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium 
+           bg-gradient-to-r from-primary to-accent text-primary-foreground;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--cream));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold) / 0.5);
+}
