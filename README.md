@@ -50,6 +50,22 @@ This project includes a **Coming Soon homepage**, product showcase, shop page, p
 - Smooth animations + premium hover effects
 
 ---
+## Screenshots 
+
+<img width="1920" height="860" alt="Screenshot (207)" src="https://github.com/user-attachments/assets/32d873dd-6b9b-49b3-bb5e-7684fbfd2c9e" />
+
+
+<img width="1920" height="875" alt="Screenshot (208)" src="https://github.com/user-attachments/assets/6862a2fd-9ea0-457b-9ba6-e178af1592f8" />
+
+
+<img width="1920" height="875" alt="Screenshot (209)" src="https://github.com/user-attachments/assets/ea8c7f23-7079-4ace-a780-80beffb85858" />
+
+<img width="1920" height="868" alt="Screenshot (210)" src="https://github.com/user-attachments/assets/8c883b3c-651f-4168-ac5f-6a74b3c0f3ea" />
+
+
+https://github.com/user-attachments/assets/b5bdc4ca-965b-4d7e-bab5-e59b01e31bdc
+
+
 
 ## Brand Theme
 
