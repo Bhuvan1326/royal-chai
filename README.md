@@ -26,6 +26,8 @@ This project includes a **Coming Soon homepage**, product showcase, shop page, p
 | Zesty Ginger Elixir | $48 | Limited Blend |
 
 ---
+## Live Deployment
+  Vercel App: https://royal-chai-rust.vercel.app/
 
 ## Key Features
 
